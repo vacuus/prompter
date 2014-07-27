@@ -87,7 +87,7 @@ int storeFeed(MessageStruct response, char* filepath, char* directory) {
 	
     // If could open file, or create it, write to it
     if (fp)
-        (fprintf(fp, "%s\n", response.contents);
+        fprintf(fp, "%s\n", response.contents);
     // if not, indicate failure
     else 
         return 1;
